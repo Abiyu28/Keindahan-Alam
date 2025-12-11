@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keindahan Indonesia</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Keindahan Indonesia</h1>
+      <p>Jelajahi Pesona Nusantara dari Sabang sampai Merauke</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#destinasi">Destinasi</a></li>
+        <li><a href="#fakta">Fakta Menarik</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero" id="beranda">
+      <div class="container">
+        <h2>Selamat Datang di Surga Dunia</h2>
+        <p>
+          Indonesia memiliki keindahan alam yang luar biasa, budaya yang
+          beragam, dan kekayaan yang tiada tara. Mari kita jelajahi bersama!
+        </p>
+      </div>
+    </div>
+
+    <div class="container" id="destinasi">
+      <h2 style="text-align: center; color: #2c3e50; margin-bottom: 2rem">
+        Destinasi Populer
+      </h2>
+      <div class="destinations">
+        <div
+          class="card"
+          onclick="showModal('Bali', 'Pulau Dewata dengan pantai yang menakjubkan, pura yang indah, dan budaya yang kaya. Tempat yang sempurna untuk liburan.')"
+        >
+          <div class="card-image">
+            <img
+              src="image/bali.jpg"
+              alt="Bali"
+              onerror="this.parentElement.classList.add('no-image'); this.style.display='none'; this.parentElement.innerHTML='<span>Bali</span>';"
+            />
+          </div>
+          <div class="card-content">
+            <h3>Bali</h3>
+            <p>
+              Pulau Dewata yang terkenal dengan pantai indah, pura megah, dan
+              budaya yang unik.
+            </p>
+            <button class="btn">Lihat Detail</button>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          onclick="showModal('Raja Ampat', 'Surga bawah laut terbaik di dunia dengan keanekaragaman hayati laut yang luar biasa. Ideal untuk diving dan snorkeling.')"
+        >
+          <div class="card-image">
+            <img
+              src="image/rajaempat.jpg"
+              alt="Raja Ampat"
+              onerror="this.parentElement.classList.add('no-image'); this.style.display='none'; this.parentElement.innerHTML='<span>Raja Ampat</span>';"
+            />
+          </div>
+          <div class="card-content">
+            <h3>Raja Ampat</h3>
+            <p>
+              Surga bawah laut dengan keanekaragaman hayati terbaik di dunia.
+            </p>
+            <button class="btn">Lihat Detail</button>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          onclick="showModal('Gunung Bromo', 'Gunung berapi aktif dengan pemandangan sunrise yang spektakuler. Lautan pasir dan kawah yang menakjubkan.')"
+        >
+          <div class="card-image">
+            <img
+              src="image/bromo.jpg"
+              alt="Gunung Bromo"
+              onerror="this.parentElement.classList.add('no-image'); this.style.display='none'; this.parentElement.innerHTML='<span>Gunung Bromo</span>';"
+            />
+          </div>
+          <div class="card-content">
+            <h3>Gunung Bromo</h3>
+            <p>Gunung berapi dengan pemandangan sunrise yang spektakuler.</p>
+            <button class="btn">Lihat Detail</button>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          onclick="showModal('Komodo', 'Rumah bagi kadal purba terbesar di dunia. Taman nasional dengan pemandangan savana dan pantai pink yang eksotis.')"
+        >
+          <div class="card-image">
+            <img
+              src="image/komodo.jpg"
+              alt="Pulau Komodo"
+              onerror="this.parentElement.classList.add('no-image'); this.style.display='none'; this.parentElement.innerHTML='<span>Pulau Komodo</span>';"
+            />
+          </div>
+          <div class="card-content">
+            <h3>Pulau Komodo</h3>
+            <p>
+              Habitat kadal purba terbesar di dunia dan pantai pink yang
+              eksotis.
+            </p>
+            <button class="btn">Lihat Detail</button>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          onclick="showModal('Danau Toba', 'Danau vulkanik terbesar di Asia Tenggara dengan Pulau Samosir di tengahnya. Keindahan alam dan budaya Batak yang kaya.')"
+        >
+          <div class="card-image">
+            <img
+              src="image/toba.jpg"
+              alt="Danau Toba"
+              onerror="this.parentElement.classList.add('no-image'); this.style.display='none'; this.parentElement.innerHTML='<span>Danau Toba</span>';"
+            />
+          </div>
+          <div class="card-content">
+            <h3>Danau Toba</h3>
+            <p>
+              Danau vulkanik terbesar di Asia Tenggara dengan keindahan yang
+              memukau.
+            </p>
+            <button class="btn">Lihat Detail</button>
+          </div>
+        </div>
+
+        <div
+          class="card"
+          onclick="showModal('Borobudur', 'Candi Buddha terbesar di dunia dan situs warisan dunia UNESCO. Arsitektur yang megah dengan relief yang indah.')"
+        >
+          <div class="card-image">
+            <img
+              src="image/borobudur.jpg"
+              alt="Candi Borobudur"
+              onerror="this.parentElement.classList.add('no-image'); this.style.display='none'; this.parentElement.innerHTML='<span>Candi Borobudur</span>';"
+            />
+          </div>
+          <div class="card-content">
+            <h3>Candi Borobudur</h3>
+            <p>Candi Buddha terbesar di dunia dan warisan budaya UNESCO.</p>
+            <button class="btn">Lihat Detail</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="facts" id="fakta">
+      <h2>Fakta Menarik Indonesia</h2>
+      <div class="facts-grid">
+        <div class="fact-item">
+          <div class="number">17,000+</div>
+          <div class="label">Pulau</div>
+        </div>
+        <div class="fact-item">
+          <div class="number">300+</div>
+          <div class="label">Suku Bangsa</div>
+        </div>
+        <div class="fact-item">
+          <div class="number">700+</div>
+          <div class="label">Bahasa Daerah</div>
+        </div>
+        <div class="fact-item">
+          <div class="number">270 Juta+</div>
+          <div class="label">Penduduk</div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="kontak">
+      <p>&copy; 2024 Keindahan Indonesia. Dibuat dengan ❤️ untuk Nusantara</p>
+      <p>Mari lestarikan keindahan alam dan budaya Indonesia!</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
